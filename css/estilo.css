@@ -1,0 +1,542 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+
+
+/*Definimos un ancho y una altura fija para nuestro menu*/
+
+header{
+	background: black; /*color del menu*/
+	height: 80px;/*altura*/
+	width: 100%;  /*anchura*/
+
+  position: sticky;
+  top: 0px;
+}
+
+
+
+/* El logo sera flotado a la izquierda */
+
+.logo {
+	float: left ; /*izq.*/
+	margin-top: 20px; /*margen superior*/
+	padding-left: 60px; /*espacio del logo hacia la derecha*/
+	width: 12%;/*tamaño del logo*/
+}
+
+
+#menu {
+  float: right; /*nuestro nav con id menu  lo flotaremos a la derecha*/
+}
+
+
+/* Quitamos estilos por defecto de el tag UL */
+#menu ul{
+  list-style: none;
+  font-size: 12px; /*tamaño del texto*/
+}
+    
+
+/* Centramos y ponemos los textos en mayuscula */
+#menu li{
+  display: block; /*bloqueo de pantalla*/
+  float: left;
+  text-transform: uppercase;
+  text-align: center; 
+  font-family: 'Dosis', sans-serif;  /*fuente*/
+}
+
+/* Damos estilo a nuestros enlaces */
+#menu li a{
+  display: block;
+  color: #fff;  /*color de texto*/
+  text-decoration: none;/*para sacar la linea de abajo predeterminado*/
+  line-height: 80px; /*Centramos el texto*/
+  padding: 0 26px;
+}
+
+#menu li a:hover{
+  background:#EBC22E;  /*color que pasa por el texto*/
+  height: 80px; /*tamaño del color que pasa por el texto*/
+  color: #211915; /*color Del texto*/ 
+}
+
+
+
+
+     /*SUBMENU*/
+
+.submenu{
+ position: absolute;
+ background: #000000; /*color negro*/
+ width: 190px; /*tamaño de la caja*/
+ display: block; 
+ opacity: 0;
+}
+
+#menu  li {  /*para poner horizontal el submenu*/
+ display: inline-block;
+ position: relative;
+ line-height: 80px;  /*espacio entre texto*/
+}
+
+.submenu li a{
+ display: block;
+ padding: 50px;
+ width: 138px;/*tamaño de la caja-naranja*/
+ color: #fff;/*color blanco textos*/
+ font-family: 'Dosis', sans-serif;
+ text-decoration: none;
+}
+
+#menu li:hover .submenu{
+  visibility: : visible;
+  opacity: 9;
+}
+
+/*FIN DE barra de MENU*/
+
+
+
+
+
+/*INICIO*/
+
+
+#banner{
+  background: url(../img/servicios.jpg);  /*imagen central*/
+  background-size: cover; /*tamaño de fondo*/
+	background-repeat: no-repeat;
+
+  padding: 150px; /*relleno*/
+  margin: 0px; /*margen*/
+  text-align: center; /*texto alineado*/
+}
+
+.contenedor h1{
+	color: #EBC22E; /*naranja*/
+	font-family: 'Federant', cursive;
+	font-size: 100px;
+}
+
+.contenedor h2{
+	color: #FAF9FD; /*blanco*/
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 40px; /*tamaño*/
+  letter-spacing: 5px; /*interletrado*/
+}
+
+.contenedor h3{
+	padding: 20px; /*relleno*/
+  margin: 20px;
+	border-radius: 36px; /*radio del borde*/
+	background: #EBC22E; /*color del fondo*/
+
+	color: black;/*negro*/
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 25px;
+}
+
+
+/*SERVICIOS-HOME*/
+
+#nuestros-servicios {
+  padding: 50px; /*relleno*/
+  margin: 0px;
+	background: #EBC22E;
+}
+
+#nuestros-servicios h1{
+ color:#17172F; /*azul*/
+ font-family: 'Federant', cursive;
+ font-size: 60px;
+text-align: center;
+}
+#nuestros-servicios p{
+ color:#17172F;
+ font-family: 'Titillium Web', sans-serif;
+ font-size: 20px;
+text-align: center;
+}
+
+
+
+
+/*CONTENIDO*/
+#contentenido-dos{
+  width: 100%;
+  
+}
+
+.contenido-detalles{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.conten-item2{ 
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+}
+
+.conten-item2 h1{
+ color: #EBC22E;
+ font-family: 'Didact Gothic', sans-serif;
+  font-size: 20px;
+}
+
+.conten-item2 p{
+ color: #17172F;
+ font-family:'Didact Gothic', sans-serif;
+ font-size: 20px;
+}
+
+
+/*servicios en pagina principal*/
+.servicios2{
+  width: 100%;
+  padding: 50px;
+  background: #EBC22E;
+}
+
+.servicios2 h3{
+ color:#fff;
+ font-family:'Didact Gothic', sans-serif;
+ font-size: 60px;
+text-align: center;
+}
+
+.contenido-dos{
+  width: 100%;
+  padding: 40px;
+  background: #EBC22E;
+}
+
+.content-details1{
+  width: 107%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #EBC22E;
+}
+
+.conten-item3{ 
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  margin: 5px;
+}
+
+
+.conten-item3 h4{
+  color:#fff;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 20px;
+}
+
+
+
+
+
+/*SERVICIOS*/ 
+/*COMMUNIY MANAGER*/
+#servicios-community{
+  background: url(../img/community.png);  /*imagen central*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px; /*altura de la imagen*/
+}
+
+.info2 h1 h2{
+  float: left;
+}
+.info2 h1 {
+  font-size: 50px;
+  color: #EBC22E; /*naranja*/
+  font-family: 'Federant', cursive;
+}
+.info2 h2 {
+  font-size: 20px;
+  color: #FAF9FD;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+
+
+/*SERVICIOS*/ 
+/*COMMUNIY MANAGER - contenido dos*/
+#servicios-community-parte-dos{
+padding: 30px;
+width: 600px;
+margin: 40px;
+float: right; /*flotar a la derecha*/ 
+}
+
+#servicios-community-parte-dos h1{
+color: #EBC22E;
+ font-family: 'Federant', cursive;
+ font-size: 40px;
+}
+
+#servicios-community-parte-dos h2{
+color: black;
+ font-family: 'Federant', cursive;
+ font-size: 30px;
+}
+#servicios-community-parte-dos p{
+ color: #000000;
+ font-family:'Didact Gothic', sans-serif;
+ font-size: 20px;
+
+}
+
+.subinformacion{
+padding: 30px;
+width: 1000px;
+background: #EBC22E;
+margin: 20px;
+float: right;
+border-radius: 36px; /*radio del borde*/
+display: flex;/*para divir la cajas*/ 
+ 
+}
+.subinformacion h3{
+  padding: 7px;
+ color: #110334;
+ font-family:'Federant', cursive;
+ font-size: 15px;
+}
+.subinformacion p{
+ color: black;
+ font-family:'Didact Gothic', sans-serif;
+ font-size: 15px;
+}
+
+/*SERVICIOS*/ 
+/*COMMUNIY MANAGER - contenido  tes*/
+
+#servicios-community-parte-tres{
+ padding: 50px;
+ width: 600px;
+ margin: 0px;
+ float: left;
+
+}
+
+#servicios-community-parte-tres h1{
+ color: #EBC22E;
+ font-family: 'Federant', cursive;
+ font-size: 30px;
+}
+
+#servicios-community-parte-tres h2{
+ color: black;
+ font-family: 'Federant', cursive;
+ font-size: 30px;
+}
+#servicios-community-parte-tres p{
+ color: #000000;
+ font-family:'Didact Gothic', sans-serif;
+ font-size: 20px;
+
+}
+.imagen-izquierda{
+ padding: 0px;
+ width: 50px;
+ margin: 0px;
+ float: right;
+
+}
+
+
+
+
+
+/*SERVICIOS-DISEÑO GRÀFICO*/ 
+.servicios-diseñog{
+  background: url(../img/diseñog.jpg);  /*imagen central*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px; /*altura de la imagen*/
+}
+
+.info3 h1 h2{
+  float: left;
+}
+.info3 h1 {
+  font-size: 60px;
+  color: #EBC22E; /*naranja*/
+  font-family: 'Federant', cursive;
+}
+.info3 h2 {
+  font-size: 20px;
+  color: black;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+/*CONTENIDO D.G*/
+
+.content-tres{
+  width: 100%;
+  padding: 20px;
+  background: #EBC22E;
+}
+
+.content-tres h4{
+ color:#06184B;/*azul*/
+ font-family:'Didact Gothic', sans-serif;
+ font-size: 25px;
+text-align: center;
+}
+
+.content-detalles{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #EBC22E; /*naranja*/
+}
+
+.conten-item4{ 
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  margin: 5px;
+}
+
+.conten-item4 p{
+  color:black; /*negro*/
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 20px;
+}
+
+
+
+/*Servicios*/ 
+/*DISEÑO WEB*/
+.servicios-diseñoweb{
+  background: url(../img/diseñoweb.jpg);  /*imagen central*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 170px; /*altura de la imagen*/
+}
+
+.servicios-diseñoweb p{
+  color: #FAF9FD; /*blanco*/
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 20px;
+}
+
+/*CONTACTO*/
+
+.contacto{
+  padding: 50px; /*relleno*/
+  margin: 0px;
+}
+
+.contacto h1{
+ color:#EBC22E;
+ font-family: 'Federant', cursive;
+ font-size: 80px;
+text-align: center;
+}
+.contacto p{
+ color:black;
+ font-family: 'Didact Gothic', sans-serif;
+ font-size: 20px;
+text-align: center;
+}
+
+form{
+  width: 600px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 27px;
+  margin:auto;
+  
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.form h2{
+  color: black;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border:none;
+  background: #EBC22E;
+}
+
+textarea{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  background: #EBC22E;
+
+}
+
+label {
+   width: 46%;
+   float: left;
+
+}
+
+
+#boton{
+  background: #EBC22E;
+  color: black;
+  padding: 20px;
+}
+
+#boton:hover{
+  cursor: pointer;
+  background: #17172F;
+  color: white;
+}
+
+
+
+/*fotter*/
+footer{
+  clear: both;
+  background: #17172F;
+  margin: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Didact Gothic', sans-serif;
+  color: white;/*blanco*/
+  width: 100%; /*el tamaño del ancho*/
+  text-align: center;  /*centrado*/
+}
+
+.column1 h2{
+  color: #FAF9FD; /*blanco*/
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 10px; /*tamaño*/
+  letter-spacing: 5px; /*interletrado*/
+}
+
+.column1 p{
+  color: #FAF9FD;/*negro*/
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 15px;
+}
